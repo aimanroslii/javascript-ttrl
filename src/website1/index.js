@@ -231,3 +231,18 @@
 
 
 //------------------
+//string slicing = creating a substring from a portion of another string 
+//                 string.slice (start, end)
+
+// const fullname = "Bro Code";
+
+// let firstname = fullname.slice(0,3);
+// let lastname = fullname.slice(4,8)
+// console.log(firstname);
+// console.log(lastname);
+
+// const email = "Bro1@gmail.com";
+// let username = email.slice(0, email.indexOf("@"));
+// console.log(username);
+
+//--------------
