@@ -1,6 +1,6 @@
 /* Counter program */
 
-#countLabel{
+/* #countLabel{
     display: block;
     text-align: center;
     font-size: 10em;
@@ -29,6 +29,6 @@
 }
 .buttons:hover{
     background-color: rgb(116, 79, 29);
-}
+} */
 
 /* Counter program */
