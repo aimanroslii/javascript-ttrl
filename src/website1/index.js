@@ -209,3 +209,25 @@
 // }
 
 //------------------
+//string methods = allow you to manipulate and work with text (strings)
+
+// let username = "  BroCode";
+// console.log(username.charAt(0));
+// console.log(username.indexOf("r"));
+// console.log(username.lastIndexOf("o"));
+// console.log(username.length);
+
+// username = username.trim();
+// console.log(username);
+
+// console.log(username.toUpperCase());
+// console.log(username.toLowerCase());
+
+// let result = username.startsWith("B");
+// console.log(result);
+
+// let results = username.endsWith("B");
+// console.log(results);
+
+
+//------------------
