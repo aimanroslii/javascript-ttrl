@@ -117,25 +117,55 @@
 //     console.log("You must be 18+ to enter this site");
 // }
 
-const myText = document.getElementById("myText");
+// const myText = document.getElementById("myText");
+// const mySubmit = document.getElementById("mySubmit");
+// const resultElement = document.getElementById("resultElements");
+
+// mySubmit.onclick = function(){
+//     age = myText.value;
+//     age = Number(age);
+
+//     if(age >= 100){
+//         resultElement.textContent = `You are too old to enter this site.`;
+//     } else if (age == 0){
+//         resultElement.textContent = `You can't enter. You were just born.`;
+//     } else if (age >= 18){
+//         resultElement.textContent = `You are old enough to enter this site`;
+//     } else if (age < 0){
+//         resultElement.textContent = `Your age cant be below 0`;
+//     } else {
+//         resultElement.textContent = `You must be 18+ to enter this site`;
+//     }
+// }
+
+//------------------
+
+// .checked = property that determines the checked state of an HTML checkbox or radio button element
+const myCheckBox = document.getElementById("myCheckBox");
+const visaBtn = document.getElementById("visaBtn");
+const masterCardBtn = document.getElementById("masterCardBtn");
+const payPalBtn = document.getElementById("payPalBtn");
 const mySubmit = document.getElementById("mySubmit");
-const resultElement = document.getElementById("resultElements");
+const subResult = document.getElementById("subResult");
+const paymentResult = document.getElementById("paymentResult");
 
 mySubmit.onclick = function(){
-    age = myText.value;
-    age = Number(age);
 
-    if(age >= 100){
-        resultElement.textContent = `You are too old to enter this site.`;
-    } else if (age == 0){
-        resultElement.textContent = `You can't enter. You were just born.`;
-    } else if (age >= 18){
-        resultElement.textContent = `You are old enough to enter this site`;
-    } else if (age < 0){
-        resultElement.textContent = `Your age cant be below 0`;
+    if(myCheckBox.checked){
+        subResult.textContent = `You are SUBSCRIBED !`;
     } else {
-        resultElement.textContent = `You must be 18+ to enter this site`;
+        subResult.textContent = `You are NOT SUBSCRIBED !`;
+    }
+
+    if(visaBtn.checked){
+        paymentResult.textContent = `You are paying with VISA`;
+    } else if (masterCardBtn.checked){
+        paymentResult.textContent = `You are paying with MASTERCARD`;
+    } else if (payPalBtn.checked){
+        paymentResult.textContent = `You are paying with PAYPAL`;
+    } else {
+        paymentResult.textContent = `You must select a payment type !`;
     }
 }
 
-//------------------
+//-------------------
