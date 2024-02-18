@@ -1,0 +1,34 @@
+/* Counter program */
+
+#countLabel{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Helvetica;
+}
+
+#counterTitle{
+    display: block;
+    text-align: center;
+    font-family: Lucida Sans;
+    font-style: italic;
+    color: rgb(200, 130, 38);
+}
+
+#btnContainer{
+    text-align: center;
+}
+.buttons{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(235, 162, 66) ;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+.buttons:hover{
+    background-color: rgb(116, 79, 29);
+}
+
+/* Counter program */
