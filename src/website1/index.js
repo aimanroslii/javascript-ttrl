@@ -496,17 +496,56 @@
 //     console.log(element);
 // }
 
-let fruits = ["apple", "orange", "banana", "coconut"];
+// let fruits = ["apple", "orange", "banana", "coconut"];
 
-fruits.forEach(upperCase);
-fruits.forEach(display);
+// fruits.forEach(upperCase);
+// fruits.forEach(display);
 
-function upperCase(element, index, array){
-    array[index] = element.toUpperCase();
-}
+// function upperCase(element, index, array){
+//     array[index] = element.toUpperCase();
+// }
 
-function display(element){
-    console.log(element);
-}
+// function display(element){
+//     console.log(element);
+// }
 
 //------------------------------
+// .map() = accepts a callback and applies that function
+//          to each element of an array, then return a new array
+
+// const numbers = [1,2,3,4,5];
+
+// const squares = numbers.map(square);
+// const cubes = numbers.map(cube);
+
+// console.log(cubes);
+
+// function square(element){
+//     return Math.pow(element,2);
+// }
+
+// function cube(element){
+//     return Math.pow(element,3);
+// }
+
+//another example
+
+// const students = ["Spongebob", "Patrick", "Squidward", "Sandy"];
+// const studentsUpper = students.map(upperCase);
+
+// console.log(studentsUpper);
+
+// function upperCase(element){
+//     return element.toUpperCase();
+// }
+
+const dates = ["2024-1-10", "2025-2-20", "2026-3-30"];
+const formattedDates = dates.map(formatDates);
+
+console.log(formattedDates);
+
+function formatDates(element){
+    const parts = element.split("-");
+    return `${parts[1]}/${parts[2]}/${parts[0]}`;
+}
+//-------------------------------
