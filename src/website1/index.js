@@ -645,4 +645,32 @@
 
 // console.log(squares);
 //----------------------------------
+// object = A collection of related propertirs and/or methods
+//          can represent real world objects (people, products, places)
+//          object = {key:value,
+//                     function()}
 
+// const person1 = {
+//     firstName : "Spongebob",
+//     lastName : "Squarepants",
+//     age : 30,
+//     isEmployed : true,
+//     sayHello: function(){console.log("Hi ! I am SpongeBob!")},
+// }
+
+// const person2 = {
+//     firstName: "Patrick",
+//     lastname: "Star",
+//     age: 42,
+//     sayHello: ()=> console.log("Hey, I'm Patrick..."),
+// }
+
+// console.log(person1.firstName);
+// console.log(person1.lastName);
+
+// console.log(person2.age);
+// console.log(person2.firstName);
+// person1.sayHello();
+// person2.sayHello();
+
+//--------------------------------
